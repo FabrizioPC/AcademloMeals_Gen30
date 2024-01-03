@@ -90,7 +90,13 @@ export const createReview = catchAsync(async (req, res, next) => {
     restaurantId: id,
     rating: reviewData.rating,
   });
-  return res.status(201).json(review);
+  return res.status(201).json({
+    id: review.id,
+    userId: review.userId,
+    comment: review.comment,
+    restaurantId: review.restaurantId,
+    rating: review.rating,
+  });
 });
 export const updateReview = catchAsync(async (req, res, next) => {
   const { review } = req;
