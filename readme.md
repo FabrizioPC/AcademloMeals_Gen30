@@ -1,6 +1,5 @@
-# Nombre de tu Aplicación
+# AcademloMeals
 
-Descripción corta de tu aplicación.
 
 ## Requisitos Previos
 
